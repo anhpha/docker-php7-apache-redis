@@ -3,7 +3,7 @@ FROM phavo/docker-php7-apache:latest
 RUN groupadd -r redis && useradd -r -g redis redis
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		ca-certificates \
-	&& rm -rf /var/lib/apt/lists/
+	&& rm -rf /var/lib/apt/lists/*
 
 
 
